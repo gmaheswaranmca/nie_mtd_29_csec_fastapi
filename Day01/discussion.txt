@@ -1,0 +1,74 @@
+Fast API Based Application Development Worshop 
+
+FrontEnd -> Backend    -> Database 
+(React)    (FastAPI)     (Mongo DB )
+JS          Python       BSON doc = JSON + LOB 
+
+UI Logic    Business Logic   Persistent Store 
+
+There are two data base sources:
+    1. SQL (RDBMS) 
+        database - table row
+
+        nested data will be in many tables using the relationship foreigh key 
+    2. No SQL - No only SQL - Mongo DB 
+        database - collection of documents 
+
+        document - hierarchical ie nested 
+
+Installed Mongo DB Server - CE 
+         - Setup Mongo Shell to work with mongo server 
+
+what is mongo shell? 
+    client tool ie CLI to connect and work with mongo db 
+
+To list databases:
+$ show dbs 
+$ show databases 
+
+To create database if does not exist:
+To select database if exist: 
+$ use student_app_db 
+
+To add the 'student' document to students collection:
+$ db.students.insertOne({name:"Anvesh", age:20, course:"CSE", year:2}) 
+
+To list students documents:
+$ db.students.find()
+
+$ db.students.insertOne({name:"Gaurangi", age:20, course:"ISE", year:2})
+
+$ db.students.find()
+
+$ db.students.insertMany([
+    {name:"Kunal", age:20, course:"CSE", year:2},
+    {name:"Manoj", age:20, course:"CSE", year:2} 
+   ])
+
+$ db.students.find()
+
+To query document by id: 
+$ db.students.findOne({_id: ObjectId('6ab0ddc09a70a5683c3682d4')})
+
+To filter / query by name: 
+$ db.students.findOne({name: "Anvesh"})
+
+To filter by course "CSE":
+$ db.students.find({course: "CSE"})
+
+To filter by course "ISE":
+$ db.students.find({course: "ISE"})
+
+To update Anvesh age as 21:
+$ db.students.updateOne({name:"Anvesh"},{$set:{age:21}})
+
+To delete Mahesh after adding to students collection:
+db.students.insertOne({name:"Mahesh", age:47, course:'CSE', year:2})
+
+db.students.find()
+
+db.students.deleteOne({name:"Mahesh"})
+
+To list the collections 
+$ show collections 
+
