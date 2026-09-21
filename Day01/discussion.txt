@@ -72,3 +72,35 @@ db.students.deleteOne({name:"Mahesh"})
 To list the collections 
 $ show collections 
 
+--- 
+
+Session 3:
+    Setup the mongo server, mongo shell.
+    Experimented CRUD ops with mongo db on students data. 
+
+    tickets: title, description, category, status #, assigned_to, resolved_by 
+    users: username, password, role 
+    Employee Janaki raising the complaint to the service team 'My Laptop is not on'.
+    TL Khushi assigns the ticket raised by Janaki Support Engineer Ganavi.
+    Admin will create Janaki, Kushi, anb Ganavi users. 
+
+1. Create mongo database 'it_service_desk_db'
+use it_service_desk_db
+2. Add four users Admin, Janaki, Kushi, anb Ganavi
+db.users.insertMany( [
+    {username: "Admin", password: "admin123", role:"admin"},
+    {username: "Janaki", password: "janaki123", role:"employee"},
+    {username: "JanKushiaki", password: "kushi123", role:"team_lead"},
+    {username: "Ganavi", password: "ganavi123", role:"support_eng"}
+])
+db.users.find()
+3. Janaki will create the ticket 
+db.tickets.insertOne({title:'laptop is not on', description: 'the power button is not working',
+  category:'Hardware', status:'NEW'})
+db.tickets.find()
+4. Khushi assigns the ticket to Ganavi
+db.tickets.updateOne({_id:ObjectId("???")}, {$set:{status:"ASSIGNED"}})
+db.tickets.find()
+5. Ganavi will update the issue resolution status 
+db.tickets.updateOne({_id:ObjectId("???")}, {$set:{status:"RESOLVED"}})
+db.tickets.find()
