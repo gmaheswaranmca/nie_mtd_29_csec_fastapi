@@ -1,32 +1,32 @@
 College Service Request System (4)
-    Anvesh
-    Drruti
-    Pragathi
-    Jayanth
+    Anvesh [1]
+    Drruti [Ab] Geethajali [moved] 
+    Pragathi [1]
+    Jayanth [..]
 Hospital Support Request System (7)
-    Hansika
-    Varsha
-    Fathima 
-    Ektha
-    Dhamini 
-    Subramanya
-    Kunal
+    Hansika, Geethajali, +1 [1]
+    Varsha [1]
+    Fathima [1]
+    Ektha [1]
+    Dhamini [1]
+    Subramanya [1]
+    Kunal [1]
     
 Corporate Facility Management
 HR Employee Service Portal (6)
-    Kishan
-    Isiri
-    Akash
-    Aniruth
-    Janavi
+    Kishan [1]
+    Isiri [1]
+    Akash [1]
+    Aniruth [1]
+    Janavi [1]
 E-commerce Customer Support (7)
-    Govardhan 
-    Indrajith 
-    Hemanth
-    Janaki 
-    Ganavi 
-    Harshitha 
-    Nisarga SS  
-    Manoj 
+    Govardhan [1] 
+    Indrajith [1]
+    Hemanth [Ab]
+    Janaki [1]
+    Ganavi [1]
+    Harshitha [1]
+    Nisarga SS  [1]
+    Manoj [1]
 
 4 + 7 + 0 + 6 + 7 = 24
