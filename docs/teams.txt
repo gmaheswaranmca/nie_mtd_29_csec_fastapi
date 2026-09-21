@@ -19,7 +19,6 @@ HR Employee Service Portal (6)
     Akash
     Aniruth
     Janavi
-    Kishan 
 E-commerce Customer Support (7)
     Govardhan 
     Indrajith 
@@ -28,5 +27,6 @@ E-commerce Customer Support (7)
     Ganavi 
     Harshitha 
     Nisarga SS  
+    Manoj 
 
 4 + 7 + 0 + 6 + 7 = 24
