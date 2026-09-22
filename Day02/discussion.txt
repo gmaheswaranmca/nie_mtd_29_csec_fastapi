@@ -1,0 +1,76 @@
+Recap : Mongo DB - CRUD operations
+
+Assumption: 
+    Installations 
+        mongo server / shell
+        python
+        vsc
+        node
+        github desktop
+
+what is FastAPI?
+
+REST API - standard for APIs (web services) dev
+
+Python : Django, Flask
+
+Python has asyncio 
+NodeJS has libuv -> event loop
+
+Starlette uvloop sits on libuv 
+
+FastAPI : starelette (web development framework), pydantic (data validation and serialization)
+    - ASGI based web dev framework  
+        Asynchronous Server Gateway Interface 
+
+uvicorn runs the FastAPI (starlette) app 
+
+-------------------
+
+Prerequisites: Python, Python packages fastapi, uvicorn 
+
+pip install fastapi uvicorn 
+
+pip list
+
+
+C:\Users\gmahe\AppData\Local\Programs\Python\Python312\Scripts
+
+RESTAPI 
+    http method + url end point = API End Point 
+
+http methods are called verbs.
+url is called noun.
+
+POST /users 
+GET /users
+GET /users/101
+PUT /users/101
+DELETE /users/101
+
+
+http://127.0.0.1:8000/docs
+
+http://127.0.0.1:8000/tickets
+
+
+
+tickets CRUD APIs 
+
+GET /tickets    read all ticets 
+GET /tickets/1  read ticket by id 1
+POST /tickets   create ticket 
+    {    
+    "title": "computer is not on",
+    "description": "power button is not working",
+    "category": "Hardware",
+    "status": "NEW"
+   }
+PUT /tickets/1   create ticket
+    {    
+    "title": "computer is not on",
+    "description": "power button is not working",
+    "category": "Hardware",
+    "status": "ASSIGNED"
+   }
+DELETE /tickets/1 delete the ticket 
