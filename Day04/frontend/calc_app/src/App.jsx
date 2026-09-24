@@ -1,5 +1,6 @@
 import About from "./About"
 import Square from "./Square"
+import SumCalc from "./SumCalc"
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <hr/>
       <Square/>
       <hr/>
+      <SumCalc/>
     </>
   )
 }
