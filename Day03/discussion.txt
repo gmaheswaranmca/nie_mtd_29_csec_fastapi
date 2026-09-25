@@ -59,6 +59,7 @@ Agenda
                 - login 
                 - user creation 
 
+            pip install fastapi pydantic pymongo
             pip install pyjwt pwdlib
             pip install "pwdlib[argon2]"
             pip install python-multipart
