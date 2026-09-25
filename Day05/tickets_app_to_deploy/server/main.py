@@ -10,21 +10,26 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from pwdlib import PasswordHash
 from datetime import datetime, timedelta, timezone
 
+import os
+
+MONGO_URL : str = str(os.getenv("MONGO_URL"))
+FRONTEND : str = str(os.getenv("FRONTEND"))
+
 app = FastAPI()
 
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[FRONTEND],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]
 )
 
 # Mongo 
-URL = "mongodb://127.0.0.1:27017"
+URL = MONGO_URL
 client = MongoClient(URL)
-db = client["richest_tickets_db"]
+db = client["tickets_db"]
 ticket_collection = db["tickets"]
 user_collection = db["users"]
 
